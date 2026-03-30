@@ -1,0 +1,16 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 40px;
+}
+
+.eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--purple-600);
+}

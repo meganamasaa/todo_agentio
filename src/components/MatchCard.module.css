@@ -1,0 +1,248 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  transition: border 200ms ease;
+}
+
+.cardActive {
+  border: 2px solid var(--purple-600);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: var(--card-padding);
+  cursor: pointer;
+}
+
+.brandIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.brandMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.brandName {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.brandCategory {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
+.scoreCol {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.scoreValue {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--purple-600);
+  display: block;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.scoreLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.scoreBar {
+  height: 3px;
+  background: var(--surface);
+  border-radius: 2px;
+  overflow: hidden;
+  width: 60px;
+  margin-left: auto;
+}
+
+.scoreBarFill {
+  height: 100%;
+  background: var(--purple-600);
+  border-radius: 2px;
+}
+
+.toggleStrip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px var(--card-padding);
+  background: var(--purple-100);
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--purple-600);
+}
+
+.chevron {
+  transition: transform 200ms ease;
+  display: flex;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.panel {
+  border-top: 1px solid var(--border);
+  padding: var(--card-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reasoning {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.signalPill {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  color: var(--text-primary);
+}
+
+.predictionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.predictionTile {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+
+.predictionValue {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.predictionValuePositive {
+  color: var(--teal-600);
+}
+
+.predictionValueNeutral {
+  color: var(--text-primary);
+}
+
+.predictionLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.ctaRow {
+  display: flex;
+  gap: 10px;
+}
+
+.ctaGhost {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.ctaGhost:hover {
+  background: var(--surface);
+}
+
+.ctaFilled {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--purple-600);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.ctaFilled:hover {
+  background: var(--purple-hover);
+}
+
+.riskNote {
+  background: var(--amber-100);
+  color: var(--amber-800);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 10px 14px;
+  border-radius: 8px;
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  /* Primary — deep navy from Agentio brand */
+  --purple-600: #0B1547;
+  --purple-500: #1A2766;
+  --purple-400: #4A5A9E;
+  --purple-300: #6E7DBF;
+  --purple-100: #ECEEF6;
+  --purple-800: #060D2E;
+  --purple-hover: #1A2766;
+
+  /* Teal */
+  --teal-600: #1D9E75;
+  --teal-400: #5DCAA5;
+  --teal-50: #E1F5EE;
+
+  /* Amber */
+  --amber-100: #FAEEDA;
+  --amber-800: #633806;
+
+  /* Blue */
+  --blue-50: #E6F1FB;
+  --blue-800: #0C447C;
+
+  /* Gray */
+  --gray-100: #F5F5F7;
+  --gray-600: #777777;
+
+  /* Neutral */
+  --surface: #F8F8FA;
+  --border: #EDEDF0;
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-tertiary: #999999;
+
+  /* Layout */
+  --page-max-width: 740px;
+  --page-padding: 24px;
+  --card-padding: 24px;
+  --card-radius: 14px;
+  --section-gap: 32px;
+  --inner-gap: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
