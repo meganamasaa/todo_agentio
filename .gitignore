@@ -22,3 +22,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+
+# Added before GitHub push
+node_modules/
+dist/
+build/
+.next/
+out/
+.vercel/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+.claude/
+.cursor/
+*.pem
+coverage/
